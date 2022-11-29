@@ -96,14 +96,14 @@ int socket (int namespace, int style, int protocol)
 int bind (int socket, struct sockaddr *addr, socklen_t length)
 ```
 
-把指定 $\color{CornflowerBlue}{socket}$ 接到指定的网络地址$\color{CornflowerBlue}{*addr}$上，长度为 $\color{CornflowerBlue}{length}$ （可以理解为插座的形状）。
+把指定 $\color{CornflowerBlue}{socket}$ 接到指定的网络地址 $\color{CornflowerBlue}{*addr}$ 上，长度为 $\color{CornflowerBlue}{length}$ （可以理解为插座的形状）。
 
 ## getsockname
 
 ```C
 int getsockname (int socket, struct sockaddr *addr, socklen_t *length-ptr)
 ```
-通过指定 $\color{CornflowerBlue}{socket}$ 标识符，获得指定的网络地址信息到$\color{CornflowerBlue}{*addr}$里，长度为 $\color{CornflowerBlue}{length-ptr}$。长度需要自己定义然后转换为 $\color{CornflowerBlue}{(struct~sockaddr *)}$
+通过指定 $\color{CornflowerBlue}{socket}$ 标识符，获得指定的网络地址信息到 $\color{CornflowerBlue}{*addr}$ 里，长度为 $\color{CornflowerBlue}{length-ptr}$。长度需要自己定义然后转换为 $\color{CornflowerBlue}{(struct~sockaddr *)}$
 
 ## getaddrinfo
 
@@ -135,7 +135,7 @@ int accept (int socket, struct sockaddr *addr, socklen_t *length_ptr)
 int connect (int socket, struct sockaddr *addr, socklen_t length)
 ```
 
-把本地的 $\color{CornflowerBlue}{socket}$ 接到远程的$\color{CornflowerBlue}{*addr}$上，长度为 $\color{CornflowerBlue}{length}$
+把本地的 $\color{CornflowerBlue}{socket}$ 接到远程的 $\color{CornflowerBlue}{*addr}$ 上，长度为 $\color{CornflowerBlue}{length}$
 
 ?->会选择一个临时端口与服务端通信<-?。
 
@@ -150,7 +150,7 @@ int select (int nfds, fd_set *read-fds, fd_set *write-fds, fd_set *except-fds, s
 ```
 $\color{CornflowerBlue}{nfds}$ 一共有多少个要读写的文件
 
-$\color{CornflowerBlue}{*read-fds}$、$\color{CornflowerBlue}{*write-fds}$ 检查要读的文件集合是否已经准备好被读，要写的文件集合是否已准备好被写。$\color{CornflowerBlue}{*except-fds}$ 检查特殊情况，不论是读、写、特殊检查，不需要的情况下都可以置空 **NULL**
+$\color{CornflowerBlue}{*read-fds}$、 $\color{CornflowerBlue}{*write-fds}$ 检查要读的文件集合是否已经准备好被读，要写的文件集合是否已准备好被写。 $\color{CornflowerBlue}{*except-fds}$ 检查特殊情况，不论是读、写、特殊检查，不需要的情况下都可以置空 **NULL**
 
 $\color{CornflowerBlue}{*timeout}$ 等待的时间，0为永远等待
 
@@ -307,7 +307,7 @@ int main(int argc, char const* argv[])
 ssize_t sendto (int socket, const void *buffer, size_t size, int flags, struct sockaddr *addr, socklen_t length)
 ```
 
-通过$\color{CornflowerBlue}{socket}$发送大小为$\color{CornflowerBlue}{size}$的$\color{CornflowerBlue}{*buffer}$内容，到长度为$\color{CornflowerBlue}{length}$的目标$\color{CornflowerBlue}{*addr}$，忽略 flags；
+通过 $\color{CornflowerBlue}{socket}$ 发送大小为 $\color{CornflowerBlue}{size}$ 的 $\color{CornflowerBlue}{*buffer}$ 内容，到长度为 $\color{CornflowerBlue}{length}$ 的目标 $\color{CornflowerBlue}{*addr}$ ，忽略 flags；
 
 returns the number of bytes transmitted, or -1 on failure
 
@@ -318,7 +318,7 @@ returns the number of bytes transmitted, or -1 on failure
 ssize_t recvfrom (int socket, void *buffer, size_t size, int flags, struct sockaddr *addr, socklen_t *length-ptr)
 ```
 
-通过$\color{CornflowerBlue}{socket}$接收大小为$\color{CornflowerBlue}{size}$的$\color{CornflowerBlue}{*buffer}$内容，到长度为$\color{CornflowerBlue}{*length-ptr}$的目标$\color{CornflowerBlue}{*addr}$，忽略 flags；
+通过 $\color{CornflowerBlue}{socket}$ 接收大小为 $\color{CornflowerBlue}{size}$ 的 $\color{CornflowerBlue}{*buffer}$ 内容，到长度为 $\color{CornflowerBlue}{*length-ptr}$ 的目标 $\color{CornflowerBlue}{*addr}$ ，忽略 flags；
 
 需要手动申请和释放多线程的资源；
 
@@ -348,17 +348,23 @@ ssize_t read (int filedes, void *buffer, size_t size) //file
 # 数据转换
 ## 主机到网络
 统一、一致的大小端格式。
+
 htonl()
+
 ntohl()
 
 ioctl()
+
 atoi()
+
 ### ???
 inet_ntop()
 
 # 多线程
 pthread_create
+
 pthread_mutex_lock
+
 pthread_mutex_unlock
 
 # 考试题目
@@ -413,10 +419,7 @@ passivesock(char *service, char *transport, int qlen)
         struct sockaddr* 目标地址, socklen_t 地址长度
     )
     ```
-$\color{orange}{
-    接收API的\,>源地址、长度<\,都为指针
-}$
 
-$\color{orange}{
-    发送API的\,>长度<\, \color{red}{不为指针}
-}$
+$\color{orange}{接收API的\,>源地址、长度<\,都为指针}$
+
+$\color{orange}{发送API的\,>长度<\, \color{red}{不为指针}}$
