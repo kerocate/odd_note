@@ -65,16 +65,16 @@ sockaddr_in for IPv6.
 # 创建 socket
 
 ```C
-int socket (int namespace, int style, int protocol)
+int socket (int family, int socktype, int protocol)
 ```
 
-**namespace**: $\color{Red}{IP协议版本}$
+**family**: $\color{Red}{IP协议版本}$
 
 - AF_INET || PF_INET: IPv4
 
 - AF_INET6 || PF_INET6: IPv6
 
-**style**: $\color{Red}{TCP/UDP模式}$
+**socktype**: $\color{Red}{TCP/UDP模式}$
 
 - SOCK_STREAM: TCP
 
@@ -380,7 +380,7 @@ passiveUDP(service)
 passivesock(service,...,qlen) 
     => getaddrinfo(...,service) 
         => bind(...) 
-        => listem(...,qlen)
+        => listen(...,qlen)
 
 passivesock(char *service, char *transport, int qlen)
 //service 服务名称
@@ -423,3 +423,11 @@ passivesock(char *service, char *transport, int qlen)
 $\color{orange}{接收API的\,>源地址、长度<\,都为指针}$
 
 $\color{orange}{发送API的\,>长度<\, \color{red}{不为指针}}$
+***
+第四题
+1. NULL `//getaddrinfo的第一个参数是获取目标地址的socket info`
+2. servname `//第二个参数是根据指定服务（端口号/字符串）获取socket info`
+3. result->ai_family, result->ai_socktype, result->ai_protocol `//根据1、2的函数返回的result的socket信息创建socket`
+4. passivesocket, result->ai_addr, result->ai_addrlen `//将result的地址信息绑定在passivesocket上`
+5. hints.ai_socktype == SOCK_STREAM && listen(passivesocket, qlen) < 0 `//如果是可以接受的tcp类型，绑定完成之后就要监听，放在if中如果失败则处理错误`
+6. close(passivesocket) `//关闭不需要的socket`
