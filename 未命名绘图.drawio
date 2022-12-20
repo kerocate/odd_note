@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2022-12-20T05:07:31.863Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.3" etag="YJ6DhGIgDic4g3jHTem2" type="github"><diagram id="R_P_sYVlvE1KpQgbMIA8">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-20T05:14:01.570Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.3" etag="6wa3wfvrcuElvSn6CTg6" type="github">
+  <diagram id="gyE8wb_mTiG-r8yEyBu2" name="第 1 页">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f7pfrkocmgcY1_yCMec4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-1" target="f7pfrkocmgcY1_yCMec4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-1" value="流式滚动页面" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-2" target="f7pfrkocmgcY1_yCMec4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-2" target="f7pfrkocmgcY1_yCMec4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-2" target="f7pfrkocmgcY1_yCMec4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-2" value="首页3D渲染" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-3" value="随机产生弹幕" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-4" value="陀螺仪输入控制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-5" target="f7pfrkocmgcY1_yCMec4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-5" target="f7pfrkocmgcY1_yCMec4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-5" target="f7pfrkocmgcY1_yCMec4-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-5" value="滚动交互动画" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-6" value="midi播放" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-7" target="f7pfrkocmgcY1_yCMec4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-7" value="typed切换效果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-17" target="f7pfrkocmgcY1_yCMec4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-17" value="对话框" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-21" value="雪碧图" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f7pfrkocmgcY1_yCMec4-23" target="f7pfrkocmgcY1_yCMec4-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-23" value="散花特效" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f7pfrkocmgcY1_yCMec4-25" value="页足" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
